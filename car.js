@@ -1,5 +1,5 @@
 class Car{
-    constructor(x,y,width,height,controlType, angle = 0 ,maxSpeed=3,color="blue"){
+    constructor(x,y,width,height,controlType,angle=0,maxSpeed=3,color="blue"){
         this.x=x;
         this.y=y;
         this.width=width;
@@ -12,7 +12,7 @@ class Car{
         this.angle=angle;
         this.damaged=false;
 
-        this.fittness=0;
+        this.fittness = 0;
 
         this.useBrain=controlType=="AI";
 
