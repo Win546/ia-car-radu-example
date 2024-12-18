@@ -11,7 +11,7 @@ class Start extends Marking {
       ctx.save();
       ctx.translate(this.center.x, this.center.y);
       ctx.rotate(angle(this.directionVector) - Math.PI / 2);
-      
+      ctx.scale(0.5,0.5);
       ctx.drawImage(this.img, -this.img.width / 2, -this.img.height / 2);
 
       ctx.restore();

@@ -34,6 +34,9 @@ class Marking  {
             return new Target(point, dir, info.width, info.height);
          case "yield":
             return new Yield(point, dir, info.width, info.height);
+        default:
+            throw new Error("Unsupported type: " + info.type);
+            
       }
    }
 

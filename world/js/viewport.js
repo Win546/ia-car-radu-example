@@ -1,5 +1,5 @@
 class Viewport {
-   constructor(canvas, zoom = 1, offset = null) {
+   constructor(canvas, zoom= 1,offset=null) {
       this.canvas = canvas;
       this.ctx = canvas.getContext("2d");
 

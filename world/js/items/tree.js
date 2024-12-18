@@ -1,10 +1,13 @@
 class Tree {
-   constructor(center, size, height = 200) {
+   constructor(center, size, height=200) {
       this.center = center;
       this.size = size; // size of the base
       this.height = height;
       this.base = this.#generateLevel(center, size);
    }
+   
+   
+
 
    #generateLevel(point, size) {
       const points = [];
@@ -16,8 +19,11 @@ class Tree {
       }
       return new Polygon(points);
    }
+   
+   
 
    draw(ctx, viewPoint) {
+//       console.log(this.height)
       const top = getFake3dPoint(this.center, viewPoint, this.height);
 
       const levelCount = 7;
