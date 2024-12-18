@@ -221,9 +221,9 @@ class World {
                 }
             }
 
-            if (degree > 2) {
+            
                 subset.push(point);
-            }
+        
         }
         return subset;
     }
