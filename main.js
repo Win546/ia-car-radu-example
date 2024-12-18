@@ -25,7 +25,7 @@ const viewport = new Viewport(carCanvas, world.zoom, world.offset);
 const miniMap = new MiniMap(miniMapCanvas, world.graph, 300)
 
 
-const N = 1;
+const N = 50;
 
 const cars = generateCars(N);
 let bestCar = cars[0];
