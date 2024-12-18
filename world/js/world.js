@@ -232,7 +232,7 @@ class World {
         const lights = this.markings.filter((m) => m instanceof Light);
         const controlCenters = [];
         for (const light of lights) {
-             console.log("luce: "+light)
+             console.log(light)
             const point = getNearestPoint(light.center, this.#getIntersections());
             let controlCenter = controlCenters.find((c) => c.equals(point));
             console.log("punto: "+point)
