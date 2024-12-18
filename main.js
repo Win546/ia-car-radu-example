@@ -54,7 +54,7 @@ function save() {
 
 function load() {
     localStorage.setItem("bestBrain",
-                         {
+                 JSON.stringify(           {
    "levels":[
       {
          "inputs":[
@@ -111,7 +111,7 @@ function load() {
       }
    ]
 }
-            );
+          )  );
 }
 
 
